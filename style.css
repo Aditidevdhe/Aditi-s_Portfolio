@@ -785,3 +785,177 @@ footer{
       font-size: 20px;
   }
   }
+
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 2rem 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .skill-container-left,
+  .skill-container-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .skill-container-left {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .skill-heading {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .skill-subHeading p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .skill-container-right {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+
+  .skills-logo {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+  }
+
+  .blob-style {
+    display: none !important; /* Hide on small screens */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  /* Add top margin to contact form container to separate from skills */
+  #contactme {
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+
+  /* Container inside contact form */
+  #contactme .container {
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Headings smaller and centered */
+  .contactus-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .contactus-subheading {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Form full width */
+  #contactme form {
+    width: 100%;
+  }
+
+  /* Stack form fields vertically with spacing */
+  .from-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Inputs and textarea smaller font, padding, and full width */
+  .formfield {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Smaller placeholder font */
+  .formfield::placeholder {
+    font-size: 0.8rem;
+  }
+
+  /* Reduce textarea height */
+  .formfield-textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  /* Button full width and easy tap */
+  #submit-btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    padding: 2rem 1rem; /* reduce padding on small screens */
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start; /* align everything to the left */
+    gap: 2rem;
+    position: relative;
+  }
+
+  .footer-faded-text {
+    position: relative; /* remove absolute positioning */
+    left: auto;
+    bottom: auto;
+    align-self: flex-start; /* align faded text to left */
+    font-size: 2.5em;
+    color: #535c87;
+    margin-bottom: 1rem;
+  }
+
+  .link-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start; /* align links container to left */
+  }
+
+  .link-wrapper div a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .icon-wrapper {
+    justify-content: flex-start; /* align icons to left */
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .icon-wrapper .icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .icon-wrapper .icon:hover {
+    color: var(--bgOrange);
+  }
+}
+
